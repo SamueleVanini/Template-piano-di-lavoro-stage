@@ -11,7 +11,7 @@
 % Data di approvazione del piano da parte del tutor interno; nel formato GG Mese AAAA
 % compilare inserendo al posto di GG 2 cifre per il giorno, e al posto di 
 % AAAA 4 cifre per l'anno
-\newcommand{\dataApprovazione}{10 Giugno 2021}
+\newcommand{\dataApprovazione}{24 Giugno 2021}
 
 % Dati dello Studente
 \newcommand{\nomeStudente}{Samuele}
@@ -21,10 +21,10 @@
 \newcommand{\telStudente}{+ 39 346 82 48 863}
 
 % Dati del Tutor Aziendale
-\newcommand{\nomeTutorAziendale}{nomeTutor}
-\newcommand{\cognomeTutorAziendale}{cognomeTutor}
-\newcommand{\emailTutorAziendale}{mail@mail.it}
-\newcommand{\telTutorAziendale}{+ 39 000 00 00 000}
+\newcommand{\nomeTutorAziendale}{Dario}
+\newcommand{\cognomeTutorAziendale}{Cescon}
+\newcommand{\emailTutorAziendale}{dario.cescon@aton.com}
+%\newcommand{\telTutorAziendale}{+ 39 000 00 00 000}
 \newcommand{\ruoloTutorAziendale}{}
 
 % Dati dell'Azienda
@@ -43,41 +43,77 @@
      % Personalizzare indicando in lista, i vari task settimana per settimana
      % sostituire a XX il totale ore della settimana
     \begin{itemize}
-        \item \textbf{Prima Settimana (XX ore)}
+        \item \textbf{Prima Settimana (40 ore)}
         \begin{itemize}
             \item Incontro con persone coinvolte nel progetto per discutere i requisiti e le richieste
             relativamente al sistema da sviluppare;
             \item Verifica credenziali e strumenti di lavoro assegnati;
             \item Presa visione dell’infrastruttura esistente;
             \item Formazione sulle tecnologie adottate;
+            \item Formazione sugli apparati hardware adottati;
         \end{itemize}
-        \item \textbf{Seconda Settimana - Sottotitolo (XX ore)} 
+        \item \textbf{Seconda Settimana - Sottotitolo (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Visione di progetti in essere con tecnologie simili;
+            \item Introduzione alle modalità di sviluppo:
+            \begin{itemize}
+                \item strumenti;
+                \item linguaggi;
+                \item tools
+            \end{itemize}
+            \item Studio autonomo riguardante:
+            \begin{itemize}
+                \item teoria RFID;
+                \item archietettura software di un wrapper;
+                \item documentazione e librerie del produttore Kathrein;
+            \end{itemize}
         \end{itemize}
-        \item \textbf{Terza Settimana - Sottotitolo (XX ore)} 
+        \item \textbf{Terza Settimana - Sottotitolo (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Progettazione del modulo software;
+            \item Definizione di una suit di test;
+            \item Implementazione delle componenti riguardanti:
+            \begin{itemize}
+                \item lettura RFID;
+                \item invio di dati ad un target esterno al device;
+            \end{itemize}
         \end{itemize}
-        \item \textbf{Quarta Settimana - Sottotitolo (XX ore)} 
+        \item \textbf{Quarta Settimana - Sottotitolo (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Implementazione delle componenti riguardanti:
+            \begin{itemize}
+                \item sessions;
+                \item singulation;
+            \end{itemize}
         \end{itemize}
-        \item \textbf{Quinta Settimana - Sottotitolo (XX ore)} 
+        \item \textbf{Quinta Settimana - Sottotitolo (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Implementazione delle componenti riguardanti:
+            \begin{itemize}
+                \item transit time;
+                \item dwell time;
+            \end{itemize}
         \end{itemize}
-        \item \textbf{Sesta Settimana - Sottotitolo (XX ore)} 
+        \item \textbf{Sesta Settimana - Sottotitolo (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Implementazione delle componenti riguardanti:
+            \begin{itemize}
+                \item kray protocol;
+                \item GPIO handle;
+            \end{itemize}
         \end{itemize}
-        \item \textbf{Settima Settimana - Sottotitolo (XX ore)} 
+        \item \textbf{Settima Settimana - Sottotitolo (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Studio di fattibilità su:
+            \begin{itemize}
+                \item refresh del contesto in caso di modifiche alla configurazione;
+                \item built-in web server;
+            \end{itemize}
         \end{itemize}
-        \item \textbf{Ottava Settimana - Conclusione (XX ore)} 
+        \item \textbf{Ottava Settimana - Conclusione (40 ore)} 
         \begin{itemize}
-            \item ;
+            \item Studio di fattibilità sull'esposione all'esterno dell'hardware management;
+            \item Collaudo e verifica del lavoro prodotto;
         \end{itemize}
     \end{itemize}
 }
@@ -86,19 +122,16 @@
 \newcommand{\totaleOre}{320}
 
 \newcommand{\obiettiviObbligatori}{
-	 \item \underline{\textit{O01}}: primo obiettivo;
-	 \item \underline{\textit{O02}}: secondo obiettivo;
-	 \item \underline{\textit{O03}}: terzo obiettivo;
-	 
+	 \item \underline{\textit{O01}}: Dimostrare una piena conoscenza della teoria legata alla tecnologia RFID;
+	 \item \underline{\textit{O02}}: Realizzazione di un modulo software pienamente funzionante che rispetti le caratteristiche desiderate 
+     dagli stakeholder;
 }
 
 \newcommand{\obiettiviDesiderabili}{
-	 \item \underline{\textit{D01}}: primo obiettivo;
-	 \item \underline{\textit{D02}}: secondo obiettivo;
+	 \item \underline{\textit{D01}}: studio di fattibilità sul porting del modulo software citato in precedenza all'interno del reader IOT;
 }
 
 \newcommand{\obiettiviFacoltativi}{
-	 \item \underline{\textit{F01}}: primo obiettivo;
-	 \item \underline{\textit{F02}}: secondo obiettivo;
-	 \item \underline{\textit{F03}}: terzo obiettivo;
+	 \item \underline{\textit{F01}}: esposizione tramite API o simili dello stato fisico del device di lettura RFID (es. antennas load, 
+     RAM occupation, CPU load);
 }
